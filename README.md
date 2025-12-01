@@ -4,7 +4,7 @@ This is the source for my personal site at [marcus-erickson.github.io](https://m
 
 ## About
 
-I'm Marcus Erickson, long-time devloper and AI coding afficinado. I build tools and write guides to help developers ship better React Native applications.
+I'm Marcus Erickson, long-time devloper and AI coding afficionado. I build tools and write guides to help developers ship better React Native applications.
 
 ## The Gap Between Prototype and Production
 
