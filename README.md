@@ -4,11 +4,7 @@ This is the source for my personal site at [marcus-erickson.github.io](https://m
 
 ## About
 
-I'm Marcus Erickson, long-time devloper and AI coding afficionado. I build tools and write guides to help developers ship better React Native applications.
-
-## The Gap Between Prototype and Production
-
-AI tools like Claude and Cursor have made it incredibly fast to build working prototypes. But there's a significant gap between "it works on my machine" and "it's ready for real users."
+I'm Marcus Erickson, long-time deeloper and AI coding afficionado. I build tools and write guides to help developers ship better React Native applications.AI tools like Claude and Cursor have made it incredibly fast to build working prototypes. But there's a significant gap between "it works on my machine" and "it's ready for real users." I want to help you bridge that gap!
 
 That last 20% is where apps succeed or fail:
 - Console logs left in production code
@@ -39,4 +35,14 @@ Thunder God Software is my collection of developer tools and resources. All prod
 
 ---
 
-Built with GitHub Pages | © 2025 Marcus Erickson / Thunder God Software
+## Stay Updated
+
+Want to know when new React Native tools and guides launch?
+
+👉 [Join the Thunder God Software mailing list](https://thundergodsoftware.substack.com/subscribe)
+
+---
+
+Built by [Marcus Erickson](https://github.com/marcus-erickson) | [Thunder God Software](https://marcus-erickson.github.io)
+
+© 2025 Marcus Erickson / Thunder God Software
