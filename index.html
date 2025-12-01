@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Erickson | React Native Developer Tools</title>
+    <meta name="description" content="Professional tooling and resources for React Native developers. Home of React Project Checkup Toolkit.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e1e4e8;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2563eb;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .company {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        .problem-section {
+            padding: 60px 0;
+            background: #fef3c7;
+            border-left: 6px solid #f59e0b;
+            margin: 40px 0;
+            border-radius: 8px;
+        }
+
+        .problem-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #92400e;
+        }
+
+        .problem-section p {
+            font-size: 1.1rem;
+            color: #78350f;
+            margin-bottom: 15px;
+        }
+
+        .problem-section .pain-points {
+            background: white;
+            padding: 25px;
+            border-radius: 6px;
+            margin: 30px 0;
+        }
+
+        .problem-section .pain-points ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .problem-section .pain-points li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #1f2937;
+        }
+
+        .problem-section .pain-points li:before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+        }
+
+        .problem-section .solution-intro {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #92400e;
+            margin-top: 25px;
+        }
+
+        .section {
+            padding: 60px 0;
+            background: white;
+            margin: 40px 0;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #2563eb;
+        }
+
+        .product-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .product-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .product-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #1e40af;
+        }
+
+        .cta-button.secondary {
+            background: #10b981;
+        }
+
+        .cta-button.secondary:hover {
+            background: #059669;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .blog-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .blog-card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none; /* Simple mobile - expand later */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Marcus Erickson</div>
+                <div class="nav-links">
+                    <a href="#toolkit">Toolkit</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#about">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Ship Professional React Native Apps</h1>
+            <p class="subtitle">Developer tools and guides from someone who ships daily</p>
+            <p class="company">Thunder God Software</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="problem-section">
+            <h2>From "It Works!" to Production-Ready</h2>
+            
+            <p>You just built an app with AI assistance in record time. Claude or Cursor helped you vibe-code a working prototype in days instead of weeks. It runs on your machine. The features work. You're excited.</p>
+            
+            <p><strong>Then reality hits.</strong></p>
+
+            <div class="pain-points">
+                <ul>
+                    <li>Console logs everywhere you forgot to remove</li>
+                    <li>No error boundaries—one bad API call crashes the whole app</li>
+                    <li>Accessibility? You'll "add that later" (narrator: they never did)</li>
+                    <li>The app works on <em>your</em> device, but your friend gets a white screen</li>
+                    <li>App Store rejection email arrives: "Missing privacy policy"</li>
+                    <li>Performance tanks with real data</li>
+                    <li>Security issues you didn't even know to look for</li>
+                </ul>
+            </div>
+
+            <p>The gap between "AI helped me build this" and "this is ready for real users" is <strong>bigger than most developers expect</strong>. AI is incredible at getting you 80% of the way there fast. But that last 20%? That's where apps live or die.</p>
+
+            <p class="solution-intro">I built React Project Checkup Toolkit to help you bridge that gap—to turn your AI-assisted prototype into a professional app you're proud to ship.</p>
+        </section>
+
+        <section id="toolkit" class="section">
+            <h2>React Project Checkup Toolkit</h2>
+            
+            <div class="product-card">
+                <h3>🆓 Quick Audit (Free)</h3>
+                <p>Check your React Native app for the 10 most common problems before launch. Quick, focused prompts you can run in Claude, Cursor, or your favorite AI tool.</p>
+                <a href="#" class="cta-button secondary">Get Free Audit</a>
+            </div>
+
+            <div class="product-card">
+                <h3>⚡ Deep Audit ($29)</h3>
+                <p>Comprehensive 100+ item checklist covering performance, security, accessibility, and app store requirements. Everything you need to ship with confidence.</p>
+                <ul style="margin: 20px 0; padding-left: 20px; color: #666;">
+                    <li>100+ organized audit prompts</li>
+                    <li>Starter claude.md template</li>
+                    <li>Category-based organization</li>
+                    <li>One-time purchase, yours forever</li>
+                </ul>
+                <a href="#" class="cta-button">Buy Deep Audit - $29</a>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <h2>Developer Guides</h2>
+            <p style="color: #666; margin-bottom: 20px;">Practical advice for building better React Native apps</p>
+            
+            <div class="blog-grid">
+                <a href="#" class="blog-card">
+                    <h3>What is CORS Anyway?</h3>
+                    <p>A beginner-friendly explanation of Cross-Origin Resource Sharing and how to fix common errors.</p>
+                </a>
+
+                <a href="#" class="blog-card">
+                    <h3>App Store Requirements: The Real Costs</h3>
+                    <p>Everything you need to know about publishing to the App Store and Google Play, including hidden costs.</p>
+                </a>
+
+                <a href="#" class="blog-card">
+                    <h3>The Boring Pages Every App Needs</h3>
+                    <p>About pages, privacy policies, and other unglamorous requirements that'll save you from rejection.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p style="margin-bottom: 20px;">I'm Marcus Erickson, Director of Product Management at Document Crunch, a construction technology company. I've spent years building and shipping React Native applications at scale.</p>
+            
+            <p style="margin-bottom: 20px;">Thunder God Software is my collection of tools built from real-world experience—the checklists I wish I'd had, the guides I had to learn the hard way, and the prompts that save hours of debugging.</p>
+
+            <p>Every product here is designed by someone who ships React Native apps daily and knows exactly where things go wrong.</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Marcus Erickson / Thunder God Software</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/marcus-erickson">GitHub</a> | 
+                <a href="https://linkedin.com/in/marcuserickson">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
