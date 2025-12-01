@@ -39,4 +39,4 @@ Thunder God Software is my collection of developer tools and resources. All prod
 
 ---
 
-Built with GitHub Pages | © 2024 Marcus Erickson / Thunder God Software
+Built with GitHub Pages | © 2025 Marcus Erickson / Thunder God Software
