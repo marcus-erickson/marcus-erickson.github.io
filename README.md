@@ -19,7 +19,7 @@ That last 20% is where apps succeed or fail:
 
 
 - **React Project Checkup Toolkit** - Professional audit tools for React Native apps
-  - Free Quick Audit (10 essential checks)
+  - **[Free Quick Audit](https://github.com/marcus-erickson/react-native-quick-audit)** - 10 essential checks in 30 seconds
   - Deep Audit (100+ comprehensive checks)
 
 ## Content
