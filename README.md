@@ -4,7 +4,7 @@ This is the source for my personal site at [marcus-erickson.github.io](https://m
 
 ## About
 
-I'm Marcus Erickson, long-time deeloper and AI coding afficionado. I build tools and write guides to help developers ship better React Native applications.AI tools like Claude and Cursor have made it incredibly fast to build working prototypes. But there's a significant gap between "it works on my machine" and "it's ready for real users." I want to help you bridge that gap!
+I'm Marcus Erickson, long-time developer and AI coding afficionado. I build tools and write guides to help developers ship better React Native applications.AI tools like Claude and Cursor have made it incredibly fast to build working prototypes. But there's a significant gap between "it works on my machine" and "it's ready for real users." I want to help you bridge that gap!
 
 That last 20% is where apps succeed or fail:
 - Console logs left in production code
@@ -32,6 +32,9 @@ This site includes:
 ## Thunder God Software
 
 Thunder God Software is my collection of developer tools and resources. All products are designed by someone who ships React Native apps daily.
+
+Need Help Getting Production Ready?
+If you've got a React Native app that's working but not quite ready to ship—or you're worried about what you might be missing—I can help. I work with development teams to audit their code, identify production readiness gaps, and create actionable plans to get apps shipped confidently. Whether you need a one-time comprehensive review or ongoing guidance through launch, reach out at <a href="mailto:thundergodsoftware@gmail.com">thundergodsoftware@gmail.com</a>
 
 ---
 
