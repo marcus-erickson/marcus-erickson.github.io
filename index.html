@@ -383,6 +383,68 @@
     }
     .card li{ margin: 6px 0; }
 
+    /* Hire tile */
+    .hire-card{
+      grid-column: span 12;
+    }
+    .hire-top{
+      display:flex;
+      gap: 14px;
+      align-items:flex-start;
+      margin-bottom: 16px;
+    }
+    .hire-badge{
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.10);
+      display:grid;
+      place-items:center;
+      font-size: 1.2rem;
+      flex: 0 0 auto;
+    }
+    .hire-grid{
+      display:grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 18px;
+      margin-top: 14px;
+    }
+    .hire-label{
+      display:block;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.88);
+    }
+    .hire-list{
+      list-style:none;
+      display:grid;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      color: rgba(255,255,255,0.82);
+    }
+    .hire-list li{
+      display:flex;
+      gap: 10px;
+      align-items:flex-start;
+    }
+    .hire-cta{
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: var(--radius-md);
+      padding: 16px;
+    }
+    .hire-cta p{
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 10px 0 14px;
+    }
+    .hire-small{
+      margin-top: 10px;
+      font-size: 0.88rem;
+      color: var(--subtle);
+    }
+
     /* Blog */
     .blog{
       display:grid;
@@ -455,6 +517,7 @@
       .hero-grid{ grid-template-columns: 1fr; }
       .card{ grid-column: span 12; }
       .blog a{ grid-column: span 6; }
+      .hire-grid{ grid-template-columns: 1fr; }
     }
     @media (max-width: 640px){
       nav ul{ display:none; }
@@ -621,53 +684,48 @@
               Buy Deep Audit — $49
             </a>
           </div>
-        </div>
 
-          <div class="hire">
-  <div class="hire-card">
-    <div class="hire-top">
-      <div class="hire-badge">🤝</div>
-      <div>
-        <h3>Need Help Getting Production Ready?</h3>
-        <p>
-          If your React Native app works but isn’t ready to ship, we can help you close the gap.
-          We’re experienced software developers who specialize in taking AI-built prototypes and getting them
-          production-ready — fast.
-        </p>
-      </div>
-    </div>
+          <!-- Hire tile -->
+          <div class="card hire-card">
+            <div class="hire-top">
+              <div class="hire-badge">🤝</div>
+              <div>
+                <h3>Need Help Getting Production Ready?</h3>
+                <p>
+                  If your React Native app works but isn’t ready to ship, we can help you close the gap.
+                  We’re experienced software developers who specialize in taking AI-built prototypes and getting them
+                  production-ready — fast.
+                </p>
+              </div>
+            </div>
 
-    <div class="hire-grid">
-      <div class="hire-list">
-        <strong>We help with:</strong>
-        <ul>
-          <li><span class="dot"></span> Stability: error handling, crash paths, edge cases</li>
-          <li><span class="dot"></span> Performance: real data, slow devices, memory, render efficiency</li>
-          <li><span class="dot"></span> Store readiness: privacy policy, permissions, metadata, compliance</li>
-          <li><span class="dot"></span> Security: sensitive data, API key exposure, auth, best practices</li>
-          <li><span class="dot"></span> UX polish: onboarding, empty states, accessibility, final fit + finish</li>
-        </ul>
-      </div>
+            <div class="hire-grid">
+              <div>
+                <strong class="hire-label">We help with:</strong>
+                <ul class="hire-list">
+                  <li><span class="dot"></span> Stability: error handling, crash paths, edge cases</li>
+                  <li><span class="dot"></span> Performance: real data, slow devices, memory, render efficiency</li>
+                  <li><span class="dot"></span> Store readiness: privacy policy, permissions, metadata, compliance</li>
+                  <li><span class="dot"></span> Security: sensitive data, API key exposure, auth, best practices</li>
+                  <li><span class="dot"></span> UX polish: onboarding, empty states, accessibility, final fit + finish</li>
+                </ul>
+              </div>
 
-      <div class="hire-cta">
-        <div class="hire-cta-inner">
-          <strong>Let’s get it shipped.</strong>
-          <p>
-            Send a quick note with what you’ve built and what’s blocking you.
-            We’ll respond with a plan and next steps.
-          </p>
-          <a class="btn green" href="mailto:thundergodsoftware@gmail.com?subject=Production%20Readiness%20Help">
-            Email Us
-          </a>
-          <p class="hire-small">
-            One-time audits or hands-on shipping support.
-          </p>
-        </div>
-
-    </div>
-  </div>
-</div>
-
+              <div class="hire-cta">
+                <strong>Let’s get it shipped.</strong>
+                <p>
+                  Send a quick note with what you’ve built and what’s blocking you.
+                  We’ll respond with a plan and next steps.
+                </p>
+                <a class="btn green" href="mailto:thundergodsoftware@gmail.com?subject=Production%20Readiness%20Help">
+                  Email Us
+                </a>
+                <div class="hire-small">
+                  One-time audits or hands-on shipping support.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -682,13 +740,13 @@
 
         <div class="blog">
           <a href="https://thundergodsoftware.substack.com/p/supabase-makes-building-easy-here" class="blog-card">
-            <h3></h3>Supabase Makes Building Easy - Here Are the 3 Ways It’ll Bite You</h3>
+            <h3>Supabase Makes Building Easy — Here Are the 3 Ways It’ll Bite You</h3>
             <p>It’s so easy to build with Supabase that you might accidentally ship problems you’ll later regret.</p>
           </a>
 
           <a href="https://thundergodsoftware.substack.com/p/that-annoying-cors-error-and-what" class="blog-card">
-            <h3>That Annoying CORS Error </h3>
-            <p>The browser said no. You said ‘what is CORS?’</p>
+            <h3>That Annoying CORS Error</h3>
+            <p>The browser said no. You said “what is CORS?”</p>
           </a>
 
           <a href="https://thundergodsoftware.substack.com/p/why-move-from-lovable-to-cursor-for" class="blog-card">
