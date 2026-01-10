@@ -338,6 +338,24 @@
       opacity: 0.95;
     }
 
+    /* Audit Screenshot */
+    .audit-showcase{
+      margin-top: 20px;
+      position: relative;
+    }
+    .audit-showcase img{
+      width: 100%;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .audit-caption{
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
     /* Cards */
     .cards{
       display:grid;
@@ -563,7 +581,7 @@
       <div class="container">
         <div class="hero-grid">
           <div>
-            <div class="eyebrow">⚡ Turn “It Works” into “Ship It”</div>
+            <div class="eyebrow">⚡ Turn "It Works" into "Ship It"</div>
             <h1>Ship Your Vibe-Coded React Apps with Confidence</h1>
             <p class="lead">
               Developer tools + practical guides from someone who cares about production-ready code.
@@ -587,7 +605,7 @@
           </div>
 
           <aside class="hero-card" aria-label="Toolkit Summary">
-            <h3>What you’ll catch before launch</h3>
+            <h3>What you'll catch before launch</h3>
             <p>
               Most apps fail in the last 20% — this toolkit helps you cover the boring (critical) stuff before users find it.
             </p>
@@ -608,16 +626,16 @@
       <div class="container">
         <div class="panel warning">
           <div class="section-title">
-            <h2>From “It Works!” to Production-Ready</h2>
+            <h2>From "It Works!" to Production-Ready</h2>
             <p>
-              AI is amazing at getting you to 80%. The last 20% is where apps live or die — and most developers don’t know what they’re missing.
+              AI is amazing at getting you to 80%. The last 20% is where apps live or die — and most developers don't know what they're missing.
             </p>
           </div>
 
           <div class="problem-grid">
             <p>
               You just built an app with AI assistance in record time. Claude or Cursor helped you vibe-code a working prototype in days instead of weeks.
-              It runs on your machine. The features work. You’re excited.
+              It runs on your machine. The features work. You're excited.
             </p>
             <p><strong>Then reality hits.</strong></p>
 
@@ -628,21 +646,48 @@
               <ul>
                 <li><span class="emoji">⚠️</span> Console logs everywhere you forgot to remove</li>
                 <li><span class="emoji">⚠️</span> No error boundaries — one bad API call crashes everything</li>
-                <li><span class="emoji">⚠️</span> Accessibility becomes “we’ll do it later” (spoiler: later never comes)</li>
+                <li><span class="emoji">⚠️</span> Accessibility becomes "we'll do it later" (spoiler: later never comes)</li>
                 <li><span class="emoji">⚠️</span> Works on your device… your friend gets a white screen</li>
-                <li><span class="emoji">⚠️</span> App Store rejection: “Missing privacy policy”</li>
+                <li><span class="emoji">⚠️</span> App Store rejection: "Missing privacy policy"</li>
                 <li><span class="emoji">⚠️</span> Performance tanks when you load real data</li>
-                <li><span class="emoji">⚠️</span> Security issues you didn’t even know to look for</li>
+                <li><span class="emoji">⚠️</span> Security issues you didn't even know to look for</li>
               </ul>
             </div>
 
             <p>
-              The gap between “AI helped me build this” and “this is ready for real users” is <strong>bigger than most developers expect</strong>.
+              The gap between "AI helped me build this" and "this is ready for real users" is <strong>bigger than most developers expect</strong>.
               AI gets you fast results — but shipping takes discipline and a checklist.
             </p>
 
             <p style="color: rgba(255,255,255,0.88); font-weight: 600;">
-              That’s why I built the React Project Checkup Toolkit — to bridge that gap and help you ship like a pro.
+              That's why I built the React Project Checkup Toolkit — to bridge that gap and help you ship like a pro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIT SHOWCASE -->
+    <section class="block">
+      <div class="container">
+        <div class="panel">
+          <div class="section-title">
+            <h2>What a Real Audit Catches</h2>
+            <p>
+              This is what production-critical issues look like before they become launch blockers.
+            </p>
+          </div>
+
+          <div class="audit-showcase">
+            <img 
+              src="/mnt/user-data/uploads/securityaudit.png" 
+              alt="Security audit results showing 2 critical issues, 3 high severity issues, and 4 medium severity issues" 
+            />
+            <p class="audit-caption">
+              Real output from the toolkit: exposed OpenAI API key in frontend code, missing .env in .gitignore, 
+              unauthenticated middleware, and rate limiting issues — all caught before launch. 
+              This app got a Security Grade D with 2 critical vulnerabilities that could lead to API theft, 
+              unauthorized access, and service abuse.
             </p>
           </div>
         </div>
@@ -684,7 +729,6 @@
             <a class="btn primary" href="https://discgolfconnect.lemonsqueezy.com/checkout/buy/81d39a06-bd6e-4a1b-9299-146a0026a93d" aria-label="Buy Deep Audit Toolkit">
               Buy Deep Audit — $49
             </a>
-        
           </div>
 
           <!-- Hire tile -->
@@ -694,8 +738,8 @@
               <div>
                 <h3>Need Help Getting Production Ready?</h3>
                 <p>
-                  If your React Native app works but isn’t ready to ship, we can help you close the gap.
-                  We’re experienced software developers who specialize in taking AI-built prototypes and getting them
+                  If your React Native app works but isn't ready to ship, we can help you close the gap.
+                  We're experienced software developers who specialize in taking AI-built prototypes and getting them
                   production-ready — fast.
                 </p>
               </div>
@@ -714,10 +758,10 @@
               </div>
 
               <div class="hire-cta">
-                <strong>Let’s get it shipped.</strong>
+                <strong>Let's get it shipped.</strong>
                 <p>
-                  Send a quick note with what you’ve built and what’s blocking you.
-                  We’ll respond with a plan and next steps.
+                  Send a quick note with what you've built and what's blocking you.
+                  We'll respond with a plan and next steps.
                 </p>
                 <a class="btn green" href="mailto:thundergodsoftware@gmail.com?subject=Production%20Readiness%20Help">
                   Email Us
@@ -737,18 +781,18 @@
       <div class="container">
         <div class="section-title">
           <h2>Developer Guides</h2>
-          <p>Practical advice for building better React Native apps — especially when AI gets you to “working” fast.</p>
+          <p>Practical advice for building better React Native apps — especially when AI gets you to "working" fast.</p>
         </div>
 
         <div class="blog">
           <a href="https://thundergodsoftware.substack.com/p/supabase-makes-building-easy-here" class="blog-card">
-            <h3>Supabase Makes Building Easy — Here Are the 3 Ways It’ll Bite You</h3>
-            <p>It’s so easy to build with Supabase that you might accidentally ship problems you’ll later regret.</p>
+            <h3>Supabase Makes Building Easy — Here Are the 3 Ways It'll Bite You</h3>
+            <p>It's so easy to build with Supabase that you might accidentally ship problems you'll later regret.</p>
           </a>
 
           <a href="https://thundergodsoftware.substack.com/p/that-annoying-cors-error-and-what" class="blog-card">
             <h3>That Annoying CORS Error</h3>
-            <p>The browser said no. You said “what is CORS?”</p>
+            <p>The browser said no. You said "what is CORS?"</p>
           </a>
 
           <a href="https://thundergodsoftware.substack.com/p/why-move-from-lovable-to-cursor-for" class="blog-card">
@@ -769,17 +813,17 @@
           </div>
 
           <p>
-            I’m Marcus Erickson — developer, AI builder, and React Native enthusiast. I write about taking AI-built prototypes to production,
-            and I’m building tools to help you ship faster and with confidence.
+            I'm Marcus Erickson — developer, AI builder, and React Native enthusiast. I write about taking AI-built prototypes to production,
+            and I'm building tools to help you ship faster and with confidence.
           </p>
 
           <p>
             <strong>Thunder God Software</strong> is my collection of tools built from real-world experience —
-            the checklists I wish I’d had, the guides I had to learn the hard way, and the prompts that save hours of debugging.
+            the checklists I wish I'd had, the guides I had to learn the hard way, and the prompts that save hours of debugging.
           </p>
 
           <p>
-            <strong>Need help getting production-ready?</strong> If your app works but isn’t quite ready to ship — or you’re worried about what you might be missing —
+            <strong>Need help getting production-ready?</strong> If your app works but isn't quite ready to ship — or you're worried about what you might be missing —
             I can help. I work with teams to audit code, identify launch gaps, and create actionable plans to ship confidently.
           </p>
 
@@ -806,7 +850,7 @@
 
         <div class="links">
           <a href="mailto:thundergodsoftware@gmail.com">Email</a>
-          <a href="https://thundergodsoftware.substack.com/subscribe" target="_blank" rel="noopener noreferrer"Substack Blog</a>
+          <a href="https://thundergodsoftware.substack.com/subscribe" target="_blank" rel="noopener noreferrer">Substack Blog</a>
           <a href="https://linkedin.com/in/marcuserickson" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
