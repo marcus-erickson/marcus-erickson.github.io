@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marcus Erickson | React Native Developer Tools</title>
-  <meta name="description" content="Professional tooling and resources for React Native developers. Home of React Project Checkup Toolkit." />
-
-  <!-- Optional: nicer font -->
+  <title>Thunder God Software | Ship Your Vibe-Coded App Safely</title>
+  <meta name="description" content="Most apps built on Lovable or Bolt have security issues the builder never knew about — exposed API keys, missing auth, data that shouldn't be public. Find and fix them before launch." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <style>
     :root{
       --bg: #0b1020;
@@ -20,23 +17,18 @@
       --muted: rgba(255,255,255,0.70);
       --subtle: rgba(255,255,255,0.55);
       --border: rgba(255,255,255,0.12);
-
       --surface: #0f172a;
       --surface-2: #0b1224;
       --card: rgba(255,255,255,0.05);
-
       --brand: #7c3aed;
       --brand-2: #2563eb;
       --accent: #10b981;
-
       --shadow: 0 12px 30px rgba(0,0,0,0.25);
       --radius-lg: 18px;
       --radius-md: 14px;
       --radius-sm: 10px;
-
       --max: 1100px;
     }
-
     *{ box-sizing: border-box; margin:0; padding:0; }
     html, body{ height:100%; }
     body{
@@ -47,10 +39,8 @@
                   radial-gradient(1200px 600px at 80% 10%, rgba(37,99,235,0.35), transparent 60%),
                   linear-gradient(180deg, var(--bg), #070a14 70%);
     }
-
     a{ color: inherit; text-decoration:none; }
     a:hover{ opacity:0.95; }
-
     .container{
       width: 100%;
       max-width: var(--max);
@@ -58,7 +48,7 @@
       padding: 0 22px;
     }
 
-    /* Header */
+    /* ── HEADER ── */
     header{
       position: sticky;
       top: 0;
@@ -74,7 +64,6 @@
       height: 72px;
       gap: 12px;
     }
-
     .brand{
       display:flex;
       align-items:center;
@@ -92,10 +81,7 @@
       place-items:center;
       font-weight: 800;
     }
-    .brand span{
-      display:block;
-      font-size: 0.95rem;
-    }
+    .brand span{ display:block; font-size: 0.95rem; }
     .brand small{
       display:block;
       font-size: 0.78rem;
@@ -103,14 +89,12 @@
       font-weight: 500;
       margin-top: -2px;
     }
-
     nav ul{
       list-style:none;
       display:flex;
       align-items:center;
       gap: 18px;
     }
-
     .nav-link{
       color: var(--muted);
       font-size: 0.92rem;
@@ -118,17 +102,8 @@
       border-radius: 10px;
       transition: background .2s ease, color .2s ease;
     }
-    .nav-link:hover{
-      color: var(--text);
-      background: rgba(255,255,255,0.06);
-    }
-
-    .nav-cta{
-      display:flex;
-      align-items:center;
-      gap: 10px;
-    }
-
+    .nav-link:hover{ color: var(--text); background: rgba(255,255,255,0.06); }
+    .nav-cta{ display:flex; align-items:center; gap: 10px; }
     .btn{
       display:inline-flex;
       align-items:center;
@@ -142,43 +117,31 @@
       background: rgba(255,255,255,0.04);
       transition: transform .15s ease, background .2s ease, border .2s ease;
       white-space: nowrap;
+      cursor: pointer;
     }
-    .btn:hover{
-      background: rgba(255,255,255,0.08);
-      transform: translateY(-1px);
-    }
-
+    .btn:hover{ background: rgba(255,255,255,0.08); transform: translateY(-1px); }
     .btn.primary{
       border: 0;
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       box-shadow: 0 16px 30px rgba(37,99,235,0.18);
     }
-    .btn.primary:hover{
-      background: linear-gradient(135deg, #8b5cf6, #3b82f6);
-    }
-
+    .btn.primary:hover{ background: linear-gradient(135deg, #8b5cf6, #3b82f6); }
     .btn.green{
       border: 0;
       background: linear-gradient(135deg, var(--accent), #06b6d4);
       color: #06221a;
       box-shadow: 0 16px 30px rgba(16,185,129,0.14);
     }
-    .btn.green:hover{
-      background: linear-gradient(135deg, #34d399, #22d3ee);
-      transform: translateY(-1px);
-    }
+    .btn.green:hover{ background: linear-gradient(135deg, #34d399, #22d3ee); transform: translateY(-1px); }
 
-    /* Hero */
-    .hero{
-      padding: 40px 0 46px;
-    }
+    /* ── HERO ── */
+    .hero{ padding: 52px 0 46px; }
     .hero-grid{
       display:grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 28px;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
       align-items: center;
     }
-
     .eyebrow{
       display:inline-flex;
       align-items:center;
@@ -190,87 +153,78 @@
       color: var(--muted);
       font-size: 0.88rem;
       width: fit-content;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
-
     h1{
-      font-size: clamp(2.2rem, 4vw, 3.3rem);
+      font-size: clamp(2rem, 4vw, 3.1rem);
       letter-spacing: -0.03em;
       line-height: 1.08;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
     .lead{
-      font-size: 1.1rem;
+      font-size: 1.08rem;
       color: var(--muted);
       max-width: 56ch;
       margin-bottom: 22px;
+      line-height: 1.65;
     }
-
     .hero-actions{
       display:flex;
       gap: 12px;
       flex-wrap: wrap;
       margin-bottom: 18px;
     }
-
     .trust{
       display:flex;
       gap: 18px;
       flex-wrap: wrap;
       color: var(--subtle);
-      font-size: 0.92rem;
-      margin-top: 12px;
+      font-size: 0.91rem;
+      margin-top: 14px;
     }
-    .trust span{
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-    }
+    .trust span{ display:inline-flex; align-items:center; gap: 8px; }
 
-    .hero-card{
-      background: rgba(255,255,255,0.06);
+    /* Hero right: audit image card */
+    .hero-audit-card{
+      background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: var(--radius-lg);
       box-shadow: var(--shadow);
-      padding: 22px;
+      overflow: hidden;
     }
-    .hero-card h3{
-      font-size: 1.05rem;
-      margin-bottom: 10px;
-      color: rgba(255,255,255,0.92);
+    .hero-audit-card .card-label{
+      padding: 12px 16px 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--subtle);
+      border-bottom: 1px solid var(--border);
     }
-    .hero-card p{
+    .hero-audit-card img{
+      width: 100%;
+      display: block;
+    }
+    .hero-audit-card .card-caption{
+      padding: 14px 16px;
+      font-size: 0.88rem;
       color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 16px;
+      line-height: 1.5;
+      border-top: 1px solid var(--border);
     }
-    .hero-card ul{
-      list-style:none;
-      display:grid;
-      gap: 10px;
-      color: rgba(255,255,255,0.82);
-      font-size: 0.93rem;
-    }
-    .hero-card li{
-      display:flex;
-      gap: 10px;
-      align-items:flex-start;
-    }
-    .dot{
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      margin-top: 7px;
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      flex: 0 0 auto;
+    .grade-badge{
+      display:inline-block;
+      background: rgba(220,38,38,0.18);
+      border: 1px solid rgba(220,38,38,0.4);
+      color: #fca5a5;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 2px 9px;
+      border-radius: 6px;
     }
 
-    /* Sections */
-    section.block{
-      margin-top: 34px;
-      padding: 34px 0;
-    }
-
+    /* ── SECTIONS ── */
+    section.block{ margin-top: 28px; padding: 28px 0; }
     .section-title{
       display:flex;
       align-items:flex-end;
@@ -278,41 +232,23 @@
       gap: 16px;
       margin-bottom: 18px;
     }
-    .section-title h2{
-      font-size: 1.7rem;
-      letter-spacing: -0.02em;
-    }
-    .section-title p{
-      color: var(--muted);
-      max-width: 60ch;
-      font-size: 0.98rem;
-    }
-
+    .section-title h2{ font-size: 1.7rem; letter-spacing: -0.02em; }
+    .section-title p{ color: var(--muted); max-width: 60ch; font-size: 0.98rem; }
     .panel{
       background: rgba(255,255,255,0.06);
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: var(--radius-lg);
-      padding: 26px;
+      padding: 28px;
       box-shadow: 0 10px 24px rgba(0,0,0,0.15);
     }
 
-    /* Problem */
-    .problem-grid{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-    }
-    .problem-grid p{
-      color: var(--muted);
-      font-size: 1rem;
-      max-width: 80ch;
-    }
-
+    /* ── PROBLEM ── */
+    .problem-grid{ display:grid; gap: 16px; }
+    .problem-grid p{ color: var(--muted); font-size: 1rem; max-width: 80ch; }
     .warning{
       border-left: 4px solid rgba(245,158,11,0.9);
-      background: linear-gradient(90deg, rgba(245,158,11,0.18), rgba(255,255,255,0.04));
+      background: linear-gradient(90deg, rgba(245,158,11,0.12), rgba(255,255,255,0.04));
     }
-
     .pain{
       margin-top: 10px;
       border-radius: var(--radius-md);
@@ -320,55 +256,22 @@
       padding: 18px;
       background: rgba(255,255,255,0.04);
     }
-    .pain ul{
-      list-style:none;
-      display:grid;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .pain li{
-      display:flex;
-      gap: 10px;
-      color: rgba(255,255,255,0.84);
-      font-size: 0.98rem;
-    }
-    .emoji{
-      width: 26px;
-      flex: 0 0 auto;
-      opacity: 0.95;
-    }
+    .pain ul{ list-style:none; display:grid; gap: 10px; margin-top: 10px; }
+    .pain li{ display:flex; gap: 10px; color: rgba(255,255,255,0.84); font-size: 0.98rem; }
+    .emoji{ width: 26px; flex: 0 0 auto; opacity: 0.95; }
 
-    /* Audit Screenshot */
-    .audit-showcase{
-      margin-top: 20px;
-      position: relative;
-    }
-    .audit-showcase img{
-      width: 100%;
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(255,255,255,0.12);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    }
-    .audit-caption{
-      margin-top: 14px;
-      color: var(--muted);
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    /* Cards */
+    /* ── CARDS (toolkit) ── */
     .cards{
       display:grid;
       grid-template-columns: repeat(12, 1fr);
       gap: 18px;
     }
-
     .card{
       grid-column: span 6;
       background: rgba(255,255,255,0.06);
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: var(--radius-lg);
-      padding: 22px;
+      padding: 24px;
       box-shadow: 0 12px 26px rgba(0,0,0,0.18);
       position: relative;
       overflow: hidden;
@@ -383,34 +286,32 @@
       pointer-events:none;
     }
     .card > *{ position: relative; }
-
-    .card h3{
-      font-size: 1.25rem;
-      margin-bottom: 8px;
-      letter-spacing: -0.01em;
-    }
-    .card p{
-      color: var(--muted);
-      margin-bottom: 14px;
-      font-size: 0.98rem;
-    }
-    .card ul{
-      margin: 0 0 16px;
-      padding-left: 18px;
-      color: rgba(255,255,255,0.78);
-    }
+    .card h3{ font-size: 1.25rem; margin-bottom: 8px; letter-spacing: -0.01em; }
+    .card p{ color: var(--muted); margin-bottom: 14px; font-size: 0.98rem; }
+    .card ul{ margin: 0 0 16px; padding-left: 18px; color: rgba(255,255,255,0.78); }
     .card li{ margin: 6px 0; }
+    .card-free-detail{
+      margin: 0 0 16px;
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+    .card-free-detail strong{ color: rgba(255,255,255,0.88); }
+    .dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      margin-top: 7px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      flex: 0 0 auto;
+    }
 
     /* Hire tile */
-    .hire-card{
-      grid-column: span 12;
-    }
-    .hire-top{
-      display:flex;
-      gap: 14px;
-      align-items:flex-start;
-      margin-bottom: 16px;
-    }
+    .hire-card{ grid-column: span 12; }
+    .hire-top{ display:flex; gap: 14px; align-items:flex-start; margin-bottom: 16px; }
     .hire-badge{
       width: 44px;
       height: 44px;
@@ -428,47 +329,20 @@
       gap: 18px;
       margin-top: 14px;
     }
-    .hire-label{
-      display:block;
-      margin-bottom: 10px;
-      color: rgba(255,255,255,0.88);
-    }
-    .hire-list{
-      list-style:none;
-      display:grid;
-      gap: 10px;
-      padding: 0;
-      margin: 0;
-      color: rgba(255,255,255,0.82);
-    }
-    .hire-list li{
-      display:flex;
-      gap: 10px;
-      align-items:flex-start;
-    }
+    .hire-label{ display:block; margin-bottom: 10px; color: rgba(255,255,255,0.88); }
+    .hire-list{ list-style:none; display:grid; gap: 10px; padding: 0; margin: 0; color: rgba(255,255,255,0.82); }
+    .hire-list li{ display:flex; gap: 10px; align-items:flex-start; }
     .hire-cta{
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.10);
       border-radius: var(--radius-md);
       padding: 16px;
     }
-    .hire-cta p{
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin: 10px 0 14px;
-    }
-    .hire-small{
-      margin-top: 10px;
-      font-size: 0.88rem;
-      color: var(--subtle);
-    }
+    .hire-cta p{ color: var(--muted); font-size: 0.95rem; margin: 10px 0 14px; }
+    .hire-small{ margin-top: 10px; font-size: 0.88rem; color: var(--subtle); }
 
-    /* Blog */
-    .blog{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 18px;
-    }
+    /* ── BLOG ── */
+    .blog{ display:grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
     .blog a{
       grid-column: span 4;
       background: rgba(255,255,255,0.05);
@@ -477,34 +351,15 @@
       padding: 20px;
       transition: transform .15s ease, background .2s ease, border .2s ease;
     }
-    .blog a:hover{
-      transform: translateY(-2px);
-      background: rgba(255,255,255,0.08);
-      border-color: rgba(255,255,255,0.16);
-    }
-    .blog h3{
-      margin-bottom: 8px;
-      font-size: 1.08rem;
-    }
-    .blog p{
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
+    .blog a:hover{ transform: translateY(-2px); background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.16); }
+    .blog h3{ margin-bottom: 8px; font-size: 1.05rem; }
+    .blog p{ color: var(--muted); font-size: 0.95rem; }
 
-    /* About */
-    .about p{
-      color: var(--muted);
-      margin-bottom: 14px;
-      max-width: 85ch;
-    }
-    .about a{
-      color: rgba(96,165,250,0.95);
-      text-decoration: underline;
-      text-decoration-color: rgba(96,165,250,0.35);
-      text-underline-offset: 3px;
-    }
+    /* ── ABOUT ── */
+    .about p{ color: var(--muted); margin-bottom: 14px; max-width: 85ch; }
+    .about a{ color: rgba(96,165,250,0.95); text-decoration: underline; text-decoration-color: rgba(96,165,250,0.35); text-underline-offset: 3px; }
 
-    /* Footer */
+    /* ── FOOTER ── */
     footer{
       padding: 46px 0 56px;
       margin-top: 50px;
@@ -512,25 +367,12 @@
       color: var(--subtle);
       background: rgba(255,255,255,0.02);
     }
-    footer .foot{
-      display:flex;
-      justify-content:space-between;
-      gap: 18px;
-      flex-wrap: wrap;
-      align-items:flex-start;
-    }
-    footer a{
-      color: rgba(96,165,250,0.95);
-      text-decoration:none;
-    }
+    footer .foot{ display:flex; justify-content:space-between; gap: 18px; flex-wrap: wrap; align-items:flex-start; }
+    footer a{ color: rgba(96,165,250,0.95); text-decoration:none; }
     footer a:hover{ text-decoration: underline; text-underline-offset: 3px; }
-    .links{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
+    .links{ display:flex; flex-wrap: wrap; gap: 14px; }
 
-    /* Responsive */
+    /* ── RESPONSIVE ── */
     @media (max-width: 960px){
       .hero-grid{ grid-template-columns: 1fr; }
       .card{ grid-column: span 12; }
@@ -540,32 +382,31 @@
     @media (max-width: 640px){
       nav ul{ display:none; }
       .blog a{ grid-column: span 12; }
-      .hero{ padding-top: 56px; }
+      .hero{ padding-top: 40px; }
     }
   </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2TEJPHJ1B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W2TEJPHJ1B');
-</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2TEJPHJ1B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W2TEJPHJ1B');
+  </script>
 </head>
-
 <body>
+
+  <!-- ── HEADER ── -->
   <header>
     <div class="container">
       <div class="nav">
         <a class="brand" href="#">
           <div class="brand-badge">⚡</div>
           <div>
-            <span>Marcus Erickson</span>
-            <small>React Native Developer Tools</small>
+            <span>Thunder God Software</span>
+            <small>Vibe Coding → Production Ready</small>
           </div>
         </a>
-
         <nav aria-label="Primary">
           <ul>
             <li><a class="nav-link" href="#toolkit">Toolkit</a></li>
@@ -573,7 +414,6 @@
             <li><a class="nav-link" href="#about">About</a></li>
           </ul>
         </nav>
-
         <div class="nav-cta">
           <a class="btn" href="https://thundergodsoftware.substack.com/subscribe" target="_blank" rel="noopener noreferrer">
             Newsletter
@@ -585,199 +425,174 @@
   </header>
 
   <main>
-    <!-- HERO -->
+
+    <!-- ── HERO ── -->
     <section class="hero">
       <div class="container">
         <div class="hero-grid">
           <div>
-            <div class="eyebrow">⚡ Turn "It Works" into "Ship It"</div>
-            <h1>Ship Your Vibe-Coded React Apps with Confidence</h1>
+            <div class="eyebrow">🔍 Real bugs. Real fixes. Zero guesswork.</div>
+            <h1>Your Vibe-Coded App Might Have an Exposed API Key Right Now</h1>
             <p class="lead">
-             Audit your app for production issues, get the exact prompts to fix them, then use AI instruction files 
-  to keep your code clean as you build.
+              Most apps built on Lovable, Bolt, or Cursor ship with security issues the builder never knew about —
+              exposed API keys, unauthenticated routes, data that shouldn't be public.
+              Our AI audit finds them in minutes and gives you the exact prompts to fix them before real users do.
             </p>
-            <p class="lead"> Built for React Native developers using Lovable, Claude Code, Cursor or your favorite tool by a developer with years of shipping experience who wants 
-  to help you avoid the mistakes I made the hard way.
-            </p>
-
             <div class="hero-actions">
-              <a class="btn green" href="https://github.com/marcus-erickson/react-native-quick-audit" target="_blank" rel="noopener noreferrer">
+              <a class="btn green" href="https://thundergodsoftware.lemonsqueezy.com/checkout/buy/cce3e558-3bb0-458c-8804-7542306722da" target="_blank" rel="noopener noreferrer">
                 ✅ Get Free Quick Audit
               </a>
               <a class="btn primary" href="#toolkit">
-                ⚡ Deep Audit Toolkit
+                ⚡ See Full Toolkit — $49
               </a>
             </div>
-
             <div class="trust">
-              <span>✅ Fast to run</span>
-              <span>✅ Works with Claude/Cursor</span>
-              <span>✅ Real-world launch checks</span>
+              <span>✅ Works with Lovable &amp; Bolt</span>
+              <span>✅ Works with Claude / Cursor</span>
+              <span>✅ One-time purchase</span>
             </div>
           </div>
 
-          <aside class="hero-card" aria-label="Toolkit Summary">
-            <h3>What you'll catch before launch</h3>
-            <p>
-              Most apps fail in the last 20% — this toolkit helps you cover the boring (critical) stuff before users find it.
-            </p>
-            <ul>
-              <li><span class="dot"></span> Missing error boundaries + crash paths</li>
-              <li><span class="dot"></span> Security & privacy leaks</li>
-              <li><span class="dot"></span> App Store / Play Store readiness gaps</li>
-              <li><span class="dot"></span> Performance issues with real data</li>
-              <li><span class="dot"></span> Accessibility and UX misses</li>
-            </ul>
+          <!-- Right: real audit output -->
+          <aside class="hero-audit-card" aria-label="Real audit output example">
+            <div class="card-label">Real audit output ↓</div>
+            <img
+              src="securityaudit.png"
+              alt="Security audit results showing Security Grade D with 2 critical vulnerabilities including exposed OpenAI API key"
+            />
+            <div class="card-caption">
+              <span class="grade-badge">Security Grade D</span> — exposed OpenAI API key found in frontend code.
+              Anyone who viewed the page source could have used it to rack up charges on this developer's account.
+              Caught before launch.
+            </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <!-- PROBLEM -->
+    <!-- ── PROBLEM ── -->
     <section class="block">
       <div class="container">
         <div class="panel warning">
           <div class="section-title">
             <h2>From "It Works!" to Production-Ready</h2>
             <p>
-              AI is amazing at getting you to 80%. The last 20% is where apps live or die — and most developers don't know what they're missing.
+              AI is amazing at getting you to 80%. The last 20% is where apps live or die —
+              and most builders don't know what they're missing.
             </p>
           </div>
-
           <div class="problem-grid">
             <p>
-              You just built an app with AI assistance in record time. Lovable, Claude Code or Cursor helped you vibe-code a working prototype in days instead of weeks.
-              It runs on your machine. The features work. You're excited.
+              You just built something on Lovable, Bolt, or Cursor in record time.
+              It runs. The features work. You're excited and ready to share it.
             </p>
             <p><strong>Then reality hits.</strong></p>
-
             <div class="pain">
               <strong style="display:block; margin-bottom:10px; color: rgba(255,255,255,0.90);">
-                Common launch pain points:
+                What catches most vibe-coded apps before they're ready:
               </strong>
               <ul>
-                <li><span class="emoji">⚠️</span> Console logs everywhere you forgot to remove</li>
+                <li><span class="emoji">⚠️</span> Exposed API keys — visible in source code to anyone who looks</li>
                 <li><span class="emoji">⚠️</span> No error boundaries — one bad API call crashes everything</li>
-                <li><span class="emoji">⚠️</span> Accessibility becomes "we'll do it later" (spoiler: later never comes)</li>
-                <li><span class="emoji">⚠️</span> Works on your device… your friend gets a white screen</li>
-                <li><span class="emoji">⚠️</span> App Store rejection: "Missing privacy policy"</li>
-                <li><span class="emoji">⚠️</span> Performance tanks when you load real data</li>
-                <li><span class="emoji">⚠️</span> Security issues you didn't even know to look for</li>
+                <li><span class="emoji">⚠️</span> Console logs everywhere, leaking data you forgot about</li>
+                <li><span class="emoji">⚠️</span> Works on your device… your users get a white screen</li>
+                <li><span class="emoji">⚠️</span> Performance tanks the moment real data loads</li>
+                <li><span class="emoji">⚠️</span> Accessibility becomes "we'll do it later" — later never comes</li>
+                <li><span class="emoji">⚠️</span> App Store rejection: missing privacy policy, wrong permissions</li>
               </ul>
             </div>
-
             <p>
-              The gap between "AI helped me build this" and "this is ready for real users" is <strong>bigger than most developers expect</strong>.
-              AI gets you fast results — but shipping takes discipline and a checklist.
+              The gap between "AI helped me build this" and "this is ready for real users" is
+              <strong>bigger than most builders expect</strong>.
+              AI gets you fast results — shipping safely takes a checklist.
             </p>
-
-            <p style="color: rgba(255,255,255,0.88); font-weight: 600;">
-              That's why I built the React Project Checkup Toolkit — to bridge that gap and help you ship like a pro. Our toolkit finds the problems and give you the exact prompts you need to get them fixed in your code.
+            <p style="color: rgba(255,255,255,0.88); font-weight: 600; margin-top: 4px;">
+              That's why I built the React Project Checkup Toolkit — to bridge that gap.
+              It finds the problems and gives you the exact AI prompts to fix them.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- AUDIT SHOWCASE -->
-    <section class="block">
-      <div class="container">
-        <div class="panel">
-          <div class="section-title">
-            <h2>What a Real Audit Catches</h2>
-            <p>
-              This is what production-critical issues look like before they become launch blockers.
-            </p>
-          </div>
-
-          <div class="audit-showcase">
-            <img 
-              src="securityaudit.png" 
-              alt="Security audit results showing 2 critical issues, 3 high severity issues, and 4 medium severity issues" 
-            />
-            <p class="audit-caption">
-              Real output from the toolkit: exposed OpenAI API key in frontend code, missing .env in .gitignore, 
-              unauthenticated middleware, and rate limiting issues — all caught before launch. 
-              This app got a Security Grade D with 2 critical vulnerabilities that could lead to API theft, 
-              unauthorized access, and service abuse.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TOOLKIT -->
+    <!-- ── TOOLKIT ── -->
     <section id="toolkit" class="block">
       <div class="container">
         <div class="section-title">
-          <h2>React Project Checkup Toolkit</h2>
-          <p>Two levels: a free quick audit to catch the obvious stuff, and a deep audit for serious shipping confidence.</p>
+          <div>
+            <h2>React Project Checkup Toolkit</h2>
+            <p style="margin-top: 6px;">Two levels — a free quick audit to catch the obvious stuff, and a deep audit for serious shipping confidence.</p>
+          </div>
         </div>
-
         <div class="cards">
+
+          <!-- Free -->
           <div class="card">
-            <h3>🆓 Quick Audit (Free)</h3>
+            <h3>🆓 Quick Audit — Free</h3>
             <p>
-              Run a quick audit to catch common production issues before launch. Perfect for AI-built prototypes that need cleanup.
+              10 targeted checks that catch the most dangerous production issues —
+              the kind that can expose your API keys or take your app down on day one.
             </p>
+            <div class="card-free-detail">
+              <strong>Includes checks for:</strong> exposed API keys, missing environment variables,
+              unauthenticated routes, console log leaks, missing error handling, and more.
+            </div>
             <a class="btn green" href="https://thundergodsoftware.lemonsqueezy.com/checkout/buy/cce3e558-3bb0-458c-8804-7542306722da" target="_blank" rel="noopener noreferrer">
               Get Free Audit
             </a>
           </div>
 
+          <!-- Paid -->
           <div class="card">
-            <h3>⚡ Deep Audit - Available Now</h3>
+            <h3>⚡ Deep Audit — $49</h3>
             <p>
-                A comprehensive audit system covering performance, security, accessibility, and app store requirements.
-                Everything you need to ship with confidence.
+              A comprehensive audit covering performance, security, accessibility, and store readiness.
+              150+ checks across every production-critical area — with exact prompts to fix what you find.
             </p>
             <ul>
-              <li>10 audits with 100s of checks across all production-critical areas</li>
-              <li>Issues ranked by severity with the exact prompts to fix each problem</li>
-              <li>Companion AI instruction files to keep your code clean as you build</li>
-              <li>Category-based organization</li>
+              <li>10 audits with 150+ checks across all production-critical areas</li>
+              <li>Issues ranked by severity — most dangerous first</li>
+              <li>Exact AI prompts to fix each problem in your codebase</li>
+              <li>Companion AI instruction files to keep code clean as you build</li>
               <li>One-time purchase — yours forever</li>
             </ul>
-           
-            <a class="btn primary" href="https://thundergodsoftware.lemonsqueezy.com/checkout/buy/81d39a06-bd6e-4a1b-9299-146a0026a93d" aria-label="Buy Deep Audit Toolkit">
-              Buy Deep Audit — Introductory Price of $49
+            <a class="btn primary" href="https://thundergodsoftware.lemonsqueezy.com/checkout/buy/81d39a06-bd6e-4a1b-9299-146a0026a93d" target="_blank" rel="noopener noreferrer">
+              Buy Deep Audit — $49
             </a>
           </div>
 
-          <!-- Hire tile -->
+          <!-- Consulting -->
           <div class="card hire-card">
             <div class="hire-top">
               <div class="hire-badge">🤝</div>
               <div>
-                <h3>Need Help Getting Production Ready?</h3>
+                <h3>Need a Human to Get You Across the Finish Line?</h3>
                 <p>
-                  If your React Native app works but isn't ready to ship, we can help you close the gap.
-                  We're experienced software developers who specialize in taking AI-built prototypes and getting them
-                  production-ready — fast.
+                  If your app works but isn't ready to ship, I can help you close the gap.
+                  20+ years shipping successful products — now applied to getting vibe-coded apps
+                  production-ready fast.
                 </p>
               </div>
             </div>
-
             <div class="hire-grid">
               <div>
-                <strong class="hire-label">We help with:</strong>
+                <strong class="hire-label">I help with:</strong>
                 <ul class="hire-list">
+                  <li><span class="dot"></span> Security: API key exposure, auth, sensitive data, best practices</li>
                   <li><span class="dot"></span> Stability: error handling, crash paths, edge cases</li>
                   <li><span class="dot"></span> Performance: real data, slow devices, memory, render efficiency</li>
                   <li><span class="dot"></span> Store readiness: privacy policy, permissions, metadata, compliance</li>
-                  <li><span class="dot"></span> Security: sensitive data, API key exposure, auth, best practices</li>
                   <li><span class="dot"></span> UX polish: onboarding, empty states, accessibility, final fit + finish</li>
                 </ul>
               </div>
-
               <div class="hire-cta">
                 <strong>Let's get it shipped.</strong>
                 <p>
                   Send a quick note with what you've built and what's blocking you.
-                  We'll respond with a plan and next steps.
+                  I'll respond with a plan and next steps.
                 </p>
                 <a class="btn green" href="mailto:thundergodsoftware@gmail.com?subject=Production%20Readiness%20Help">
-                  Email Us
+                  Email Me
                 </a>
                 <div class="hire-small">
                   One-time audits or hands-on shipping support.
@@ -785,30 +600,28 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- BLOG -->
+    <!-- ── BLOG ── -->
     <section id="blog" class="block">
       <div class="container">
         <div class="section-title">
           <h2>Developer Guides</h2>
-          <p>Practical advice for building better React Native apps — especially when AI gets you to "working" fast.</p>
+          <p>Practical advice for getting AI-built apps to production — especially when the vibe coding went great and the shipping part is hard.</p>
         </div>
-
         <div class="blog">
-          <a href="https://thundergodsoftware.substack.com/p/supabase-makes-building-easy-here" class="blog-card">
+          <a href="https://thundergodsoftware.substack.com/p/supabase-makes-building-easy-here">
             <h3>Supabase Makes Building Easy — Here Are the 3 Ways It'll Bite You</h3>
             <p>It's so easy to build with Supabase that you might accidentally ship problems you'll later regret.</p>
           </a>
-
-          <a href="https://thundergodsoftware.substack.com/p/that-annoying-cors-error-and-what" class="blog-card">
+          <a href="https://thundergodsoftware.substack.com/p/that-annoying-cors-error-and-what">
             <h3>That Annoying CORS Error</h3>
             <p>The browser said no. You said "what is CORS?"</p>
           </a>
-
-          <a href="https://thundergodsoftware.substack.com/p/why-move-from-lovable-to-cursor-for" class="blog-card">
+          <a href="https://thundergodsoftware.substack.com/p/why-move-from-lovable-to-cursor-for">
             <h3>Why Move from Lovable to Cursor for Mobile Apps</h3>
             <p>Lovable gets you started. Cursor gets you shipped.</p>
           </a>
@@ -816,34 +629,28 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ── ABOUT ── -->
     <section id="about" class="block">
       <div class="container">
         <div class="panel about">
           <div class="section-title">
             <h2>About</h2>
-            <p>Tools, checklists, and guides built from real-world shipping experience.</p>
+            <p>Tools and guides built from 20+ years of real-world shipping experience.</p>
           </div>
-
           <p>
-            I'm Marcus Erickson — developer, AI builder, and React Native enthusiast. I write about taking AI-built prototypes to production,
-            and I'm building tools to help you ship faster and with confidence.
+            I'm Marcus Erickson — developer, product builder, and AI practitioner. I've spent 20+ years shipping
+            successful products across software, insurance, construction, and more. Now I'm focused on helping
+            the next wave of builders — the ones using Lovable, Bolt, and Cursor to build fast — ship safely and confidently.
           </p>
-
           <p>
             <strong>Thunder God Software</strong> is my collection of tools built from real-world experience —
             the checklists I wish I'd had, the guides I had to learn the hard way, and the prompts that save hours of debugging.
           </p>
-
           <p>
-            <strong>Need help getting production-ready?</strong> If your app works but isn't quite ready to ship — or you're worried about what you might be missing —
-            I can help. I work with teams to audit code, identify launch gaps, and create actionable plans to ship confidently.
+            <strong>Need help getting production-ready?</strong> If your app works but isn't quite ready to ship —
+            or you're worried about what you might be missing — I can help. Reach out at
+            <a href="mailto:thundergodsoftware@gmail.com">thundergodsoftware@gmail.com</a>.
           </p>
-
-          <p>
-            Reach out at <a href="mailto:thundergodsoftware@gmail.com">thundergodsoftware@gmail.com</a>.
-          </p>
-
           <div style="margin-top: 18px; display:flex; gap: 12px; flex-wrap: wrap;">
             <a class="btn" href="https://linkedin.com/in/marcuserickson" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a class="btn" href="https://thundergodsoftware.substack.com/subscribe" target="_blank" rel="noopener noreferrer">Newsletter</a>
@@ -851,27 +658,28 @@
         </div>
       </div>
     </section>
+
   </main>
 
+  <!-- ── FOOTER ── -->
   <footer>
     <div class="container">
       <div class="foot">
         <div>
-          <strong style="color: rgba(255,255,255,0.88);">Marcus Erickson</strong><br />
-          <span>Thunder God Software</span>
+          <strong style="color: rgba(255,255,255,0.88);">Thunder God Software</strong><br />
+          <span>Vibe Coding → Production Ready</span>
         </div>
-
         <div class="links">
           <a href="mailto:thundergodsoftware@gmail.com">Email</a>
-          <a href="https://thundergodsoftware.substack.com/subscribe" target="_blank" rel="noopener noreferrer">Substack Blog</a>
+          <a href="https://thundergodsoftware.substack.com/subscribe" target="_blank" rel="noopener noreferrer">Substack</a>
           <a href="https://linkedin.com/in/marcuserickson" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
-
       <div style="margin-top: 22px; color: rgba(255,255,255,0.50); font-size: 0.9rem;">
         &copy; 2026 Marcus Erickson / Thunder God Software
       </div>
     </div>
   </footer>
+
 </body>
 </html>
