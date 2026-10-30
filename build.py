@@ -36,6 +36,7 @@ body {{ margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 system-
 main {{ max-width:1000px; margin:0 auto; padding:40px 16px 56px; }}
 h1 {{ margin:0 0 8px; font-size:30px; line-height:1.2; }}
 .lede {{ margin:0 0 8px; max-width:62ch; color:var(--muted); }}
+.disclaimer {{ margin:16px 0 0; max-width:74ch; padding:2px 0 2px 12px; border-left:3px solid var(--line); font-size:14px; line-height:1.5; color:var(--muted); }}
 h2 {{ margin:36px 0 14px; font-size:12px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); }}
 .grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:16px; }}
 .card {{ display:flex; flex-direction:column; padding:18px; background:var(--paper); border:1px solid var(--line); border-radius:8px; }}
@@ -52,6 +53,7 @@ footer {{ margin-top:40px; font-size:13px; color:var(--muted); }}
 <body><main>
 <h1>{e(data["title"])}</h1>
 <p class="lede">{e(data["intro"])}</p>
+{('<p class="disclaimer">' + e(data["disclaimer"]) + '</p>') if data.get("disclaimer") else ''}
 {groups}
 <footer>Examples and starting points. Check anything they produce before relying on it.</footer>
 </main></body></html>

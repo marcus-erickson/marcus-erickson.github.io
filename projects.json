@@ -1,6 +1,7 @@
 {
   "title": "Marcus Erickson's AI Builds",
   "intro": "Claude skills and Chrome extensions I have built. Each one lives in its own public repository, with a README that explains what it does and how to use it.",
+  "disclaimer": "Provided \"AS IS\" with no warranties or guarantees of any kind. Free to clone, use, modify, and experiment with. Use at your own risk. No responsibility is assumed for bugs, data loss, security issues, or damages resulting from its use. Not guaranteed to be production-ready or supported.",
   "groups": [
     {
       "name": "Construction skills",
