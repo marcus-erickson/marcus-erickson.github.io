@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marcus Erickson&#x27;s AI Builds</title>
+<style>
+:root { --bg:#f4f6f9; --paper:#fff; --ink:#1b2430; --muted:#5b6675; --line:#d9dfe7; --accent:#1f4f7a; }
+@media (prefers-color-scheme: dark) { :root { --bg:#10151c; --paper:#18202a; --ink:#e6ebf1; --muted:#9aa6b5; --line:#2a3544; --accent:#7db3e6; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+main { max-width:1000px; margin:0 auto; padding:40px 16px 56px; }
+h1 { margin:0 0 8px; font-size:30px; line-height:1.2; }
+.lede { margin:0 0 8px; max-width:62ch; color:var(--muted); }
+h2 { margin:36px 0 14px; font-size:12px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:16px; }
+.card { display:flex; flex-direction:column; padding:18px; background:var(--paper); border:1px solid var(--line); border-radius:8px; }
+.card h3 { margin:0 0 6px; font-size:18px; }
+.card p { margin:10px 0 16px; flex:1; font-size:15px; }
+.tags { display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:0; list-style:none; }
+.tags li { padding:1px 8px; border:1px solid var(--line); border-radius:99px; font-size:12px; color:var(--muted); }
+.links { display:flex; flex-wrap:wrap; gap:8px; }
+.btn { padding:6px 12px; border:1px solid var(--line); border-radius:6px; color:var(--ink); font-size:14px; font-weight:500; text-decoration:none; }
+.btn.primary { background:var(--accent); border-color:var(--accent); color:var(--paper); }
+.btn:hover { text-decoration:underline; }
+footer { margin-top:40px; font-size:13px; color:var(--muted); }
+</style></head>
+<body><main>
+<h1>Marcus Erickson&#x27;s AI Builds</h1>
+<p class="lede">Claude skills and Chrome extensions I have built. Each one lives in its own public repository, with a README that explains what it does and how to use it.</p>
+<section><h2>Construction skills</h2><div class="grid"><article class="card"><h3>Contract Review Skill</h3><ul class="tags"><li>Claude skill</li><li>Contracts</li></ul><p>Runs five fixed review prompts against a construction contract and shows the full contract beside the results, with every point linking to the clause it cites. In Claude, an Ask Claude tab answers your own questions.</p><div class="links"><a class="btn primary" href="https://marcus-erickson.github.io/ContractReviewSkill/">Open the page</a><a class="btn" href="https://github.com/marcus-erickson/ContractReviewSkill/raw/main/contract-review-skill.skill" download>Download</a><a class="btn" href="https://github.com/marcus-erickson/ContractReviewSkill">GitHub</a></div></article><article class="card"><h3>Submittal Register Skill</h3><ul class="tags"><li>Claude skill</li><li>Submittals</li></ul><p>Three skills for submittals: build a register from a project manual or spec PDF, compare two registers, and keep one current from transmittals and stamped returns.</p><div class="links"><a class="btn primary" href="https://marcus-erickson.github.io/SubmittalRegisterSkill/">Open the page</a><a class="btn" href="https://github.com/marcus-erickson/SubmittalRegisterSkill/raw/main/downloads/submittal-register.zip" download>Download</a><a class="btn" href="https://github.com/marcus-erickson/SubmittalRegisterSkill">GitHub</a></div></article><article class="card"><h3>BIM Viewer Skill</h3><ul class="tags"><li>Claude skill</li><li>BIM</li></ul><p>A browser tool that shows what is inside Revit files, IFC files and classified point-cloud scans, with an Ask Claude chat when it runs inside Claude. Nothing is uploaded anywhere.</p><div class="links"><a class="btn primary" href="https://marcus-erickson.github.io/BimViewerSkill/">Open the page</a><a class="btn" href="https://github.com/marcus-erickson/BimViewerSkill">GitHub</a></div></article></div></section>
+<section><h2>Chrome extensions</h2><div class="grid"><article class="card"><h3>AI Usage Tracker</h3><ul class="tags"><li>Chrome extension</li></ul><p>Shows how much of your Claude, ChatGPT, Grok and Gemini plan you have used and predicts whether you will hit the limit before it resets.</p><div class="links"><a class="btn" href="https://github.com/marcus-erickson/AIUsageExtension">GitHub</a></div></article><article class="card"><h3>AI Command Deck</h3><ul class="tags"><li>Chrome extension</li></ul><p>Replaces the new tab page with a launchpad of AI tools, so opening a tab starts with the question &quot;What will you build today?&quot;</p><div class="links"><a class="btn" href="https://github.com/marcus-erickson/AiChromeExtension">GitHub</a></div></article></div></section>
+<footer>Examples and starting points. Check anything they produce before relying on it.</footer>
+</main></body></html>

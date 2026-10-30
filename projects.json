@@ -1,0 +1,51 @@
+{
+  "title": "Marcus Erickson's AI Builds",
+  "intro": "Claude skills and Chrome extensions I have built. Each one lives in its own public repository, with a README that explains what it does and how to use it.",
+  "groups": [
+    {
+      "name": "Construction skills",
+      "items": [
+        {
+          "name": "Contract Review Skill",
+          "repo": "ContractReviewSkill",
+          "description": "Runs five fixed review prompts against a construction contract and shows the full contract beside the results, with every point linking to the clause it cites. In Claude, an Ask Claude tab answers your own questions.",
+          "tags": ["Claude skill", "Contracts"],
+          "page": "https://marcus-erickson.github.io/ContractReviewSkill/",
+          "download": "https://github.com/marcus-erickson/ContractReviewSkill/raw/main/contract-review-skill.skill"
+        },
+        {
+          "name": "Submittal Register Skill",
+          "repo": "SubmittalRegisterSkill",
+          "description": "Three skills for submittals: build a register from a project manual or spec PDF, compare two registers, and keep one current from transmittals and stamped returns.",
+          "tags": ["Claude skill", "Submittals"],
+          "page": "https://marcus-erickson.github.io/SubmittalRegisterSkill/",
+          "download": "https://github.com/marcus-erickson/SubmittalRegisterSkill/raw/main/downloads/submittal-register.zip"
+        },
+        {
+          "name": "BIM Viewer Skill",
+          "repo": "BimViewerSkill",
+          "description": "A browser tool that shows what is inside Revit files, IFC files and classified point-cloud scans, with an Ask Claude chat when it runs inside Claude. Nothing is uploaded anywhere.",
+          "tags": ["Claude skill", "BIM"],
+          "page": "https://marcus-erickson.github.io/BimViewerSkill/"
+        }
+      ]
+    },
+    {
+      "name": "Chrome extensions",
+      "items": [
+        {
+          "name": "AI Usage Tracker",
+          "repo": "AIUsageExtension",
+          "description": "Shows how much of your Claude, ChatGPT, Grok and Gemini plan you have used and predicts whether you will hit the limit before it resets.",
+          "tags": ["Chrome extension"]
+        },
+        {
+          "name": "AI Command Deck",
+          "repo": "AiChromeExtension",
+          "description": "Replaces the new tab page with a launchpad of AI tools, so opening a tab starts with the question \"What will you build today?\"",
+          "tags": ["Chrome extension"]
+        }
+      ]
+    }
+  ]
+}
