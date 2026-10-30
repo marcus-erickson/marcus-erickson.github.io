@@ -48,7 +48,8 @@
           "description": "Shows how much of your Claude, ChatGPT, Grok and Gemini plan you have used and predicts whether you will hit the limit before it resets.",
           "tags": [
             "Chrome extension"
-          ]
+          ],
+          "page": "https://marcus-erickson.github.io/AIUsageExtension/"
         },
         {
           "name": "AI Command Deck",
@@ -56,7 +57,8 @@
           "description": "Replaces the new tab page with a launchpad of AI tools, so opening a tab starts with the question \"What will you build today?\"",
           "tags": [
             "Chrome extension"
-          ]
+          ],
+          "page": "https://marcus-erickson.github.io/AiChromeExtension/"
         }
       ]
     },
