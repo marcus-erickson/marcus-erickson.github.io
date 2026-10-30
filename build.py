@@ -43,8 +43,8 @@ h2 {{ margin:36px 0 14px; font-size:12px; letter-spacing:.09em; text-transform:u
 .card p {{ margin:10px 0 16px; flex:1; font-size:15px; }}
 .tags {{ display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:0; list-style:none; }}
 .tags li {{ padding:1px 8px; border:1px solid var(--line); border-radius:99px; font-size:12px; color:var(--muted); }}
-.links {{ display:flex; flex-wrap:wrap; gap:8px; }}
-.btn {{ padding:6px 12px; border:1px solid var(--line); border-radius:6px; color:var(--ink); font-size:14px; font-weight:500; text-decoration:none; }}
+.links {{ display:flex; flex-wrap:nowrap; gap:6px; }}
+.btn {{ flex:1 1 auto; min-width:0; padding:6px 6px; border:1px solid var(--line); border-radius:6px; color:var(--ink); font-size:13px; font-weight:500; text-align:center; white-space:nowrap; text-decoration:none; }}
 .btn.primary {{ background:var(--accent); border-color:var(--accent); color:var(--paper); }}
 .btn:hover {{ text-decoration:underline; }}
 footer {{ margin-top:40px; font-size:13px; color:var(--muted); }}
