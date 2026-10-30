@@ -35,8 +35,8 @@ page = f"""<!doctype html>
 body {{ margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }}
 main {{ max-width:1000px; margin:0 auto; padding:40px 16px 56px; }}
 h1 {{ margin:0 0 8px; font-size:30px; line-height:1.2; }}
-.lede {{ margin:0 0 8px; max-width:62ch; color:var(--muted); }}
-.disclaimer {{ margin:16px 0 0; max-width:74ch; padding:2px 0 2px 12px; border-left:3px solid var(--line); font-size:14px; line-height:1.5; color:var(--muted); }}
+.lede {{ margin:0 0 8px; color:var(--muted); }}
+.disclaimer {{ margin:16px 0 0; padding:2px 0 2px 12px; border-left:3px solid var(--line); font-size:14px; line-height:1.5; color:var(--muted); }}
 h2 {{ margin:36px 0 14px; font-size:12px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); }}
 .grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:16px; }}
 .card {{ display:flex; flex-direction:column; padding:18px; background:var(--paper); border:1px solid var(--line); border-radius:8px; }}
